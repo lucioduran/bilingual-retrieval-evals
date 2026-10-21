@@ -22,6 +22,7 @@ cd bilingual-retrieval-evals
 python -m bilingual_retrieval validate
 python -m unittest discover -v
 python -m bilingual_retrieval verify --report results/dev/report.json
+python -m bilingual_retrieval verify --report results/eval/report.json
 ```
 
 ## Usage
@@ -78,7 +79,24 @@ Frozen settings: cutoff 3, BM25 `k1=1.2`, `b=0.75`, 128 embedding tokens, batch 
 
 ## Results
 
-The recorded development run is available in [raw evidence](results/dev/report.json) and [breakdowns](results/dev/summary.json). Evaluation measurements are being prepared with the same frozen settings.
+Actual local CPU evaluation on Intel Xeon W-3223, two threads. Headline scores use the 32 original queries across eight evaluation families, excluding accent-omission variants.
+
+| Method | Recall@3 | NDCG@3 | MRR@3 |
+| --- | ---: | ---: | ---: |
+| BM25 | 0.719 | 0.719 | 0.719 |
+| Accent-folded BM25 | 0.719 | 0.719 | 0.719 |
+| Multilingual MiniLM | 1.000 | 0.977 | 0.969 |
+
+| Direction | Queries | BM25 NDCG@3 | Dense NDCG@3 |
+| --- | ---: | ---: | ---: |
+| English to English | 8 | 1.000 | 1.000 |
+| English to Spanish | 8 | 0.625 | 0.954 |
+| Spanish to English | 8 | 0.375 | 0.954 |
+| Spanish to Spanish | 8 | 0.875 | 1.000 |
+
+Dense retrieval still ranks the bait distractor ahead of the intended shared-drink document for a Spanish cultural query against English documents. Perfect Recall@3 therefore hides a meaningful ranking error. Accent folding corrects one Spanish parcel-query rank loss among the seven matched accent pairs; it does not solve cross-language lexical retrieval.
+
+[Detailed language, entity, accent, cultural, and uncertainty tables](docs/results.md) include denominators and interpretation limits. [Evaluation evidence](results/eval/report.json), [all imperfect rankings](results/eval/errors.json), and [development evidence](results/dev/report.json) are replayable without neural libraries. These measurements establish behavior on this fixture set only.
 
 ## Testing
 

@@ -1,0 +1,638 @@
+{
+  "bm25": {
+    "accent/none": {
+      "ndcg": {
+        "mean": 0.8333333333333334,
+        "n": 18
+      },
+      "queries": 18,
+      "recall": {
+        "mean": 0.8333333333333334,
+        "n": 18
+      },
+      "reciprocal_rank": {
+        "mean": 0.8333333333333334,
+        "n": 18
+      }
+    },
+    "accent/omitted": {
+      "ndcg": {
+        "mean": 0.5450664109693898,
+        "n": 14
+      },
+      "queries": 14,
+      "recall": {
+        "mean": 0.5714285714285714,
+        "n": 14
+      },
+      "reciprocal_rank": {
+        "mean": 0.5357142857142857,
+        "n": 14
+      }
+    },
+    "accent/preserved": {
+      "ndcg": {
+        "mean": 0.5714285714285714,
+        "n": 14
+      },
+      "queries": 14,
+      "recall": {
+        "mean": 0.5714285714285714,
+        "n": 14
+      },
+      "reciprocal_rank": {
+        "mean": 0.5714285714285714,
+        "n": 14
+      }
+    },
+    "direction/en->en": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 8
+      },
+      "queries": 8,
+      "recall": {
+        "mean": 1.0,
+        "n": 8
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 8
+      }
+    },
+    "direction/en->es": {
+      "ndcg": {
+        "mean": 0.625,
+        "n": 8
+      },
+      "queries": 8,
+      "recall": {
+        "mean": 0.625,
+        "n": 8
+      },
+      "reciprocal_rank": {
+        "mean": 0.625,
+        "n": 8
+      }
+    },
+    "direction/es->en": {
+      "ndcg": {
+        "mean": 0.3333333333333333,
+        "n": 15
+      },
+      "queries": 15,
+      "recall": {
+        "mean": 0.3333333333333333,
+        "n": 15
+      },
+      "reciprocal_rank": {
+        "mean": 0.3333333333333333,
+        "n": 15
+      }
+    },
+    "direction/es->es": {
+      "ndcg": {
+        "mean": 0.8420619835714305,
+        "n": 15
+      },
+      "queries": 15,
+      "recall": {
+        "mean": 0.8666666666666667,
+        "n": 15
+      },
+      "reciprocal_rank": {
+        "mean": 0.8333333333333334,
+        "n": 15
+      }
+    },
+    "entity/absent": {
+      "ndcg": {
+        "mean": 0.48769765845238194,
+        "n": 30
+      },
+      "queries": 30,
+      "recall": {
+        "mean": 0.5,
+        "n": 30
+      },
+      "reciprocal_rank": {
+        "mean": 0.48333333333333334,
+        "n": 30
+      }
+    },
+    "entity/present": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 16
+      },
+      "queries": 16,
+      "recall": {
+        "mean": 1.0,
+        "n": 16
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 16
+      }
+    },
+    "kind/cultural": {
+      "ndcg": {
+        "mean": 0.6096220730654774,
+        "n": 24
+      },
+      "queries": 24,
+      "recall": {
+        "mean": 0.625,
+        "n": 24
+      },
+      "reciprocal_rank": {
+        "mean": 0.6041666666666666,
+        "n": 24
+      }
+    },
+    "kind/parallel": {
+      "ndcg": {
+        "mean": 0.7272727272727273,
+        "n": 22
+      },
+      "queries": 22,
+      "recall": {
+        "mean": 0.7272727272727273,
+        "n": 22
+      },
+      "reciprocal_rank": {
+        "mean": 0.7272727272727273,
+        "n": 22
+      }
+    },
+    "language/en": {
+      "ndcg": {
+        "mean": 0.8125,
+        "n": 16
+      },
+      "queries": 16,
+      "recall": {
+        "mean": 0.8125,
+        "n": 16
+      },
+      "reciprocal_rank": {
+        "mean": 0.8125,
+        "n": 16
+      }
+    },
+    "language/es": {
+      "ndcg": {
+        "mean": 0.587697658452382,
+        "n": 30
+      },
+      "queries": 30,
+      "recall": {
+        "mean": 0.6,
+        "n": 30
+      },
+      "reciprocal_rank": {
+        "mean": 0.5833333333333334,
+        "n": 30
+      }
+    },
+    "overall": {
+      "ndcg": {
+        "mean": 0.6658897772515534,
+        "n": 46
+      },
+      "queries": 46,
+      "recall": {
+        "mean": 0.6739130434782609,
+        "n": 46
+      },
+      "reciprocal_rank": {
+        "mean": 0.6630434782608695,
+        "n": 46
+      }
+    }
+  },
+  "bm25-folded": {
+    "accent/none": {
+      "ndcg": {
+        "mean": 0.8333333333333334,
+        "n": 18
+      },
+      "queries": 18,
+      "recall": {
+        "mean": 0.8333333333333334,
+        "n": 18
+      },
+      "reciprocal_rank": {
+        "mean": 0.8333333333333334,
+        "n": 18
+      }
+    },
+    "accent/omitted": {
+      "ndcg": {
+        "mean": 0.5714285714285714,
+        "n": 14
+      },
+      "queries": 14,
+      "recall": {
+        "mean": 0.5714285714285714,
+        "n": 14
+      },
+      "reciprocal_rank": {
+        "mean": 0.5714285714285714,
+        "n": 14
+      }
+    },
+    "accent/preserved": {
+      "ndcg": {
+        "mean": 0.5714285714285714,
+        "n": 14
+      },
+      "queries": 14,
+      "recall": {
+        "mean": 0.5714285714285714,
+        "n": 14
+      },
+      "reciprocal_rank": {
+        "mean": 0.5714285714285714,
+        "n": 14
+      }
+    },
+    "direction/en->en": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 8
+      },
+      "queries": 8,
+      "recall": {
+        "mean": 1.0,
+        "n": 8
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 8
+      }
+    },
+    "direction/en->es": {
+      "ndcg": {
+        "mean": 0.625,
+        "n": 8
+      },
+      "queries": 8,
+      "recall": {
+        "mean": 0.625,
+        "n": 8
+      },
+      "reciprocal_rank": {
+        "mean": 0.625,
+        "n": 8
+      }
+    },
+    "direction/es->en": {
+      "ndcg": {
+        "mean": 0.3333333333333333,
+        "n": 15
+      },
+      "queries": 15,
+      "recall": {
+        "mean": 0.3333333333333333,
+        "n": 15
+      },
+      "reciprocal_rank": {
+        "mean": 0.3333333333333333,
+        "n": 15
+      }
+    },
+    "direction/es->es": {
+      "ndcg": {
+        "mean": 0.8666666666666667,
+        "n": 15
+      },
+      "queries": 15,
+      "recall": {
+        "mean": 0.8666666666666667,
+        "n": 15
+      },
+      "reciprocal_rank": {
+        "mean": 0.8666666666666667,
+        "n": 15
+      }
+    },
+    "entity/absent": {
+      "ndcg": {
+        "mean": 0.5,
+        "n": 30
+      },
+      "queries": 30,
+      "recall": {
+        "mean": 0.5,
+        "n": 30
+      },
+      "reciprocal_rank": {
+        "mean": 0.5,
+        "n": 30
+      }
+    },
+    "entity/present": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 16
+      },
+      "queries": 16,
+      "recall": {
+        "mean": 1.0,
+        "n": 16
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 16
+      }
+    },
+    "kind/cultural": {
+      "ndcg": {
+        "mean": 0.625,
+        "n": 24
+      },
+      "queries": 24,
+      "recall": {
+        "mean": 0.625,
+        "n": 24
+      },
+      "reciprocal_rank": {
+        "mean": 0.625,
+        "n": 24
+      }
+    },
+    "kind/parallel": {
+      "ndcg": {
+        "mean": 0.7272727272727273,
+        "n": 22
+      },
+      "queries": 22,
+      "recall": {
+        "mean": 0.7272727272727273,
+        "n": 22
+      },
+      "reciprocal_rank": {
+        "mean": 0.7272727272727273,
+        "n": 22
+      }
+    },
+    "language/en": {
+      "ndcg": {
+        "mean": 0.8125,
+        "n": 16
+      },
+      "queries": 16,
+      "recall": {
+        "mean": 0.8125,
+        "n": 16
+      },
+      "reciprocal_rank": {
+        "mean": 0.8125,
+        "n": 16
+      }
+    },
+    "language/es": {
+      "ndcg": {
+        "mean": 0.6,
+        "n": 30
+      },
+      "queries": 30,
+      "recall": {
+        "mean": 0.6,
+        "n": 30
+      },
+      "reciprocal_rank": {
+        "mean": 0.6,
+        "n": 30
+      }
+    },
+    "overall": {
+      "ndcg": {
+        "mean": 0.6739130434782609,
+        "n": 46
+      },
+      "queries": 46,
+      "recall": {
+        "mean": 0.6739130434782609,
+        "n": 46
+      },
+      "reciprocal_rank": {
+        "mean": 0.6739130434782609,
+        "n": 46
+      }
+    }
+  },
+  "dense": {
+    "accent/none": {
+      "ndcg": {
+        "mean": 0.9794960974206366,
+        "n": 18
+      },
+      "queries": 18,
+      "recall": {
+        "mean": 1.0,
+        "n": 18
+      },
+      "reciprocal_rank": {
+        "mean": 0.9722222222222222,
+        "n": 18
+      }
+    },
+    "accent/omitted": {
+      "ndcg": {
+        "mean": 0.9736378395408184,
+        "n": 14
+      },
+      "queries": 14,
+      "recall": {
+        "mean": 1.0,
+        "n": 14
+      },
+      "reciprocal_rank": {
+        "mean": 0.9642857142857143,
+        "n": 14
+      }
+    },
+    "accent/preserved": {
+      "ndcg": {
+        "mean": 0.9736378395408184,
+        "n": 14
+      },
+      "queries": 14,
+      "recall": {
+        "mean": 1.0,
+        "n": 14
+      },
+      "reciprocal_rank": {
+        "mean": 0.9642857142857143,
+        "n": 14
+      }
+    },
+    "direction/en->en": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 8
+      },
+      "queries": 8,
+      "recall": {
+        "mean": 1.0,
+        "n": 8
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 8
+      }
+    },
+    "direction/en->es": {
+      "ndcg": {
+        "mean": 0.9538662191964322,
+        "n": 8
+      },
+      "queries": 8,
+      "recall": {
+        "mean": 1.0,
+        "n": 8
+      },
+      "reciprocal_rank": {
+        "mean": 0.9375,
+        "n": 8
+      }
+    },
+    "direction/es->en": {
+      "ndcg": {
+        "mean": 0.9507906338095277,
+        "n": 15
+      },
+      "queries": 15,
+      "recall": {
+        "mean": 1.0,
+        "n": 15
+      },
+      "reciprocal_rank": {
+        "mean": 0.9333333333333333,
+        "n": 15
+      }
+    },
+    "direction/es->es": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 15
+      },
+      "queries": 15,
+      "recall": {
+        "mean": 1.0,
+        "n": 15
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 15
+      }
+    },
+    "entity/absent": {
+      "ndcg": {
+        "mean": 0.9630929753571458,
+        "n": 30
+      },
+      "queries": 30,
+      "recall": {
+        "mean": 1.0,
+        "n": 30
+      },
+      "reciprocal_rank": {
+        "mean": 0.95,
+        "n": 30
+      }
+    },
+    "entity/present": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 16
+      },
+      "queries": 16,
+      "recall": {
+        "mean": 1.0,
+        "n": 16
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 16
+      }
+    },
+    "kind/cultural": {
+      "ndcg": {
+        "mean": 0.9692441461309548,
+        "n": 24
+      },
+      "queries": 24,
+      "recall": {
+        "mean": 1.0,
+        "n": 24
+      },
+      "reciprocal_rank": {
+        "mean": 0.9583333333333334,
+        "n": 24
+      }
+    },
+    "kind/parallel": {
+      "ndcg": {
+        "mean": 0.9832240797077936,
+        "n": 22
+      },
+      "queries": 22,
+      "recall": {
+        "mean": 1.0,
+        "n": 22
+      },
+      "reciprocal_rank": {
+        "mean": 0.9772727272727273,
+        "n": 22
+      }
+    },
+    "language/en": {
+      "ndcg": {
+        "mean": 0.9769331095982161,
+        "n": 16
+      },
+      "queries": 16,
+      "recall": {
+        "mean": 1.0,
+        "n": 16
+      },
+      "reciprocal_rank": {
+        "mean": 0.96875,
+        "n": 16
+      }
+    },
+    "language/es": {
+      "ndcg": {
+        "mean": 0.9753953169047639,
+        "n": 30
+      },
+      "queries": 30,
+      "recall": {
+        "mean": 1.0,
+        "n": 30
+      },
+      "reciprocal_rank": {
+        "mean": 0.9666666666666667,
+        "n": 30
+      }
+    },
+    "overall": {
+      "ndcg": {
+        "mean": 0.9759302013198777,
+        "n": 46
+      },
+      "queries": 46,
+      "recall": {
+        "mean": 1.0,
+        "n": 46
+      },
+      "reciprocal_rank": {
+        "mean": 0.967391304347826,
+        "n": 46
+      }
+    }
+  }
+}

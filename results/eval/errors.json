@@ -1,0 +1,546 @@
+[
+  {
+    "query_id": "garden-en-es-original",
+    "method": "bm25",
+    "relevant_documents": [
+      "garden-es"
+    ],
+    "top_three": [
+      "bait-es",
+      "bond-es",
+      "bondi-es"
+    ],
+    "relevant_ranks": {
+      "garden-es": 7
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "garden-en-es-original",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "garden-es"
+    ],
+    "top_three": [
+      "bait-es",
+      "bond-es",
+      "bondi-es"
+    ],
+    "relevant_ranks": {
+      "garden-es": 7
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "garden-es-en-original",
+    "method": "bm25",
+    "relevant_documents": [
+      "garden-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "garden-en": 7
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "garden-es-en-original",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "garden-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "garden-en": 7
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "garden-es-en-unaccented",
+    "method": "bm25",
+    "relevant_documents": [
+      "garden-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "garden-en": 7
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "garden-es-en-unaccented",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "garden-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "garden-en": 7
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "mate-es-en-original",
+    "method": "bm25",
+    "relevant_documents": [
+      "mate-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "mate-en": 10
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "mate-es-en-original",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "mate-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "mate-en": 10
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "mate-es-en-original",
+    "method": "dense",
+    "relevant_documents": [
+      "mate-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "mate-en",
+      "cow-en"
+    ],
+    "relevant_ranks": {
+      "mate-en": 2
+    },
+    "ndcg_at_3": 0.6309297535714574
+  },
+  {
+    "query_id": "mate-es-en-unaccented",
+    "method": "bm25",
+    "relevant_documents": [
+      "mate-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "mate-en": 10
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "mate-es-en-unaccented",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "mate-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "mate-en": 10
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "mate-es-en-unaccented",
+    "method": "dense",
+    "relevant_documents": [
+      "mate-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "mate-en",
+      "cow-en"
+    ],
+    "relevant_ranks": {
+      "mate-en": 2
+    },
+    "ndcg_at_3": 0.6309297535714574
+  },
+  {
+    "query_id": "mate-es-es-original",
+    "method": "bm25",
+    "relevant_documents": [
+      "mate-es"
+    ],
+    "top_three": [
+      "bait-es",
+      "garden-es",
+      "vaquita-es"
+    ],
+    "relevant_ranks": {
+      "mate-es": 6
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "mate-es-es-original",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "mate-es"
+    ],
+    "top_three": [
+      "bait-es",
+      "garden-es",
+      "vaquita-es"
+    ],
+    "relevant_ranks": {
+      "mate-es": 6
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "mate-es-es-unaccented",
+    "method": "bm25",
+    "relevant_documents": [
+      "mate-es"
+    ],
+    "top_three": [
+      "bait-es",
+      "garden-es",
+      "vaquita-es"
+    ],
+    "relevant_ranks": {
+      "mate-es": 6
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "mate-es-es-unaccented",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "mate-es"
+    ],
+    "top_three": [
+      "bait-es",
+      "garden-es",
+      "vaquita-es"
+    ],
+    "relevant_ranks": {
+      "mate-es": 6
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "parcel-en-es-original",
+    "method": "bm25",
+    "relevant_documents": [
+      "parcel-es"
+    ],
+    "top_three": [
+      "bait-es",
+      "bond-es",
+      "bondi-es"
+    ],
+    "relevant_ranks": {
+      "parcel-es": 12
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "parcel-en-es-original",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "parcel-es"
+    ],
+    "top_three": [
+      "bait-es",
+      "bond-es",
+      "bondi-es"
+    ],
+    "relevant_ranks": {
+      "parcel-es": 12
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "parcel-en-es-original",
+    "method": "dense",
+    "relevant_documents": [
+      "parcel-es"
+    ],
+    "top_three": [
+      "bus-es",
+      "parcel-es",
+      "bondi-es"
+    ],
+    "relevant_ranks": {
+      "parcel-es": 2
+    },
+    "ndcg_at_3": 0.6309297535714574
+  },
+  {
+    "query_id": "parcel-es-en-original",
+    "method": "bm25",
+    "relevant_documents": [
+      "parcel-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "parcel-en": 12
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "parcel-es-en-original",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "parcel-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "parcel-en": 12
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "parcel-es-en-unaccented",
+    "method": "bm25",
+    "relevant_documents": [
+      "parcel-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "parcel-en": 12
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "parcel-es-en-unaccented",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "parcel-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "parcel-en": 12
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "sobremesa-en-es-original",
+    "method": "bm25",
+    "relevant_documents": [
+      "sobremesa-es"
+    ],
+    "top_three": [
+      "bait-es",
+      "bond-es",
+      "bondi-es"
+    ],
+    "relevant_ranks": {
+      "sobremesa-es": 14
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "sobremesa-en-es-original",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "sobremesa-es"
+    ],
+    "top_three": [
+      "bait-es",
+      "bond-es",
+      "bondi-es"
+    ],
+    "relevant_ranks": {
+      "sobremesa-es": 14
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "sobremesa-es-en-original",
+    "method": "bm25",
+    "relevant_documents": [
+      "sobremesa-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "sobremesa-en": 14
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "sobremesa-es-en-original",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "sobremesa-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "sobremesa-en": 14
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "sobremesa-es-en-unaccented",
+    "method": "bm25",
+    "relevant_documents": [
+      "sobremesa-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "sobremesa-en": 14
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "sobremesa-es-en-unaccented",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "sobremesa-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "sobremesa-en": 14
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "sobremesa-es-es-unaccented",
+    "method": "bm25",
+    "relevant_documents": [
+      "sobremesa-es"
+    ],
+    "top_three": [
+      "tabletop-es",
+      "sobremesa-es",
+      "cow-es"
+    ],
+    "relevant_ranks": {
+      "sobremesa-es": 2
+    },
+    "ndcg_at_3": 0.6309297535714574
+  },
+  {
+    "query_id": "vaquita-es-en-original",
+    "method": "bm25",
+    "relevant_documents": [
+      "vaquita-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "vaquita-en": 16
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "vaquita-es-en-original",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "vaquita-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "vaquita-en": 16
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "vaquita-es-en-unaccented",
+    "method": "bm25",
+    "relevant_documents": [
+      "vaquita-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "vaquita-en": 16
+    },
+    "ndcg_at_3": 0.0
+  },
+  {
+    "query_id": "vaquita-es-en-unaccented",
+    "method": "bm25-folded",
+    "relevant_documents": [
+      "vaquita-en"
+    ],
+    "top_three": [
+      "bait-en",
+      "bond-en",
+      "bondi-en"
+    ],
+    "relevant_ranks": {
+      "vaquita-en": 16
+    },
+    "ndcg_at_3": 0.0
+  }
+]
