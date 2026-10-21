@@ -94,7 +94,7 @@ Actual local CPU evaluation on Intel Xeon W-3223, two threads. Headline scores u
 | Spanish to English | 8 | 0.375 | 0.954 |
 | Spanish to Spanish | 8 | 0.875 | 1.000 |
 
-Dense retrieval still ranks the bait distractor ahead of the intended shared-drink document for a Spanish cultural query against English documents. Perfect Recall@3 therefore hides a meaningful ranking error. Accent folding corrects one Spanish parcel-query rank loss among the seven matched accent pairs; it does not solve cross-language lexical retrieval.
+Dense retrieval still ranks the bait distractor ahead of the intended shared-drink document for a Spanish cultural query against English documents. Perfect Recall@3 therefore hides a meaningful ranking error. Accent folding corrects one Spanish post-meal-query rank loss among the seven matched accent pairs; it does not solve cross-language lexical retrieval.
 
 [Detailed language, entity, accent, cultural, and uncertainty tables](docs/results.md) include denominators and interpretation limits. [Evaluation evidence](results/eval/report.json), [all imperfect rankings](results/eval/errors.json), and [development evidence](results/dev/report.json) are replayable without neural libraries. These measurements establish behavior on this fixture set only.
 

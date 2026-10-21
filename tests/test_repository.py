@@ -67,3 +67,27 @@ class RepositoryTests(unittest.TestCase):
                 report["evaluation"]["breakdowns"],
                 json.loads(path.with_name("summary.json").read_text(encoding="utf-8")),
             )
+
+    def test_error_export_matches_raw_rankings(self):
+        data = json.loads((ROOT / "data/dataset.json").read_text(encoding="utf-8"))
+        queries = {q["id"]: q for q in data["queries"]}
+        report = json.loads((ROOT / "results/eval/report.json").read_text(encoding="utf-8"))
+        expected = []
+        for qid, methods in report["evaluation"]["traces"].items():
+            for method, trace in methods.items():
+                if trace["scores"]["ndcg"] < 1:
+                    positives = [
+                        j["document_id"] for j in queries[qid]["judgments"] if j["grade"] > 0
+                    ]
+                    expected.append(
+                        {
+                            "query_id": qid,
+                            "method": method,
+                            "relevant_documents": positives,
+                            "top_three": trace["ranking"][:3],
+                            "relevant_ranks": {d: trace["ranking"].index(d) + 1 for d in positives},
+                            "ndcg_at_3": trace["scores"]["ndcg"],
+                        }
+                    )
+        saved = json.loads((ROOT / "results/eval/errors.json").read_text(encoding="utf-8"))
+        self.assertEqual(saved, expected)

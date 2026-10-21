@@ -39,11 +39,11 @@ These intervals use all variants, averaged within family, with equal family weig
 
 ## Error inspection
 
-Dense retrieval puts the relevant document at rank two for three variants: `mate-es-en-original`, `mate-es-en-unaccented`, and `garden-en-es-original`. The first two are one underlying intent, not two independent failures. All other dense variants rank the relevant document first.
+Dense retrieval puts the relevant document at rank two for three variants: `mate-es-en-original`, `mate-es-en-unaccented`, and `parcel-en-es-original`. The first two are one underlying intent, not two independent failures. All other dense variants rank the relevant document first.
 
-The shared-drink Spanish query retrieves the English bait distractor above the relevant drink document. This is a concrete cultural ambiguity failure despite perfect dense Recall@3. The English gardening query retrieves the Spanish market document before the gardening document.
+The shared-drink Spanish query retrieves the English bait distractor above the relevant drink document. This is a concrete cultural ambiguity failure despite perfect dense Recall@3. The English parcel query retrieves the Spanish lost-transit-pass document before the parcel document.
 
-For BM25, the unaccented Spanish parcel query against Spanish documents drops from rank one to rank two; folding accents restores rank one. Several cross-language failures remain with either lexical setting. Named fictional institutions provide shared tokens, which helps explain the entity-present subgroup results, but this dataset does not isolate that effect experimentally.
+For BM25, the unaccented Spanish post-meal conversation query against Spanish documents drops from rank one to rank two; folding accents restores rank one. Several cross-language failures remain with either lexical setting. Named fictional institutions provide shared tokens, which helps explain the entity-present subgroup results, but this dataset does not isolate that effect experimentally.
 
 [All imperfect query/method rankings](../results/eval/errors.json) include top-three IDs, relevant ranks, and NDCG. The raw report preserves complete rankings for successes too. Labels were not changed after inspecting these outcomes.
 
