@@ -97,3 +97,27 @@ class RetrievalTests(unittest.TestCase):
         self.assertEqual(dense({"z": [1, 0], "a": [1, 0], "b": [-1, 0]}, [1, 0]), ["a", "z", "b"])
         with self.assertRaises(ValueError):
             dense({}, [1])
+
+
+class MatchedTests(unittest.TestCase):
+    def test_pairing_uses_family_and_target_not_row_order(self):
+        from bilingual_retrieval.metrics import matched_contrasts
+
+        q = parse_dataset(fixture()).queries[0]
+        en = replace(q, id="english")
+        es = replace(q, id="spanish", language="es", accent="preserved")
+        omitted = replace(es, id="omitted", accent="omitted")
+        other = replace(es, id="other-target", target_language="es")
+        scores = {
+            "english": score(["a"], {"a": 2}, 1),
+            "spanish": score([], {"a": 2}, 1),
+            "omitted": score(["a"], {"a": 2}, 1),
+            "other-target": score(["a"], {"a": 2}, 1),
+        }
+        result = matched_contrasts([omitted, other, en, es], scores)
+        self.assertEqual(result["spanish_minus_english/target-en"]["mean_delta"], -1)
+        self.assertEqual(result["omitted_minus_original/target-en"]["mean_delta"], 1)
+        self.assertEqual(len(result), 2)
+        scores["spanish"] = score([], {"a": 0}, 1)
+        self.assertEqual(matched_contrasts([en, es, omitted], scores), {})
+        self.assertEqual(matched_contrasts([en, en, es], scores), {})

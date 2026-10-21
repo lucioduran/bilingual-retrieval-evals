@@ -121,7 +121,9 @@ def environment(threads: int) -> dict[str, Any]:
 
 def write_json(path: Path, value: Any) -> None:
     path.write_text(
-        json.dumps(value, indent=2, sort_keys=True, allow_nan=False) + "\n", encoding="utf-8"
+        json.dumps(value, indent=2, sort_keys=True, allow_nan=False) + "\n",
+        encoding="utf-8",
+        newline="\n",
     )
 
 
