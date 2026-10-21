@@ -76,5 +76,5 @@ output = {
     "queries": queries,
 }
 (ROOT / "data/dataset.json").write_text(
-    json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n"
 )
