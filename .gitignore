@@ -1,0 +1,8 @@
+.venv/
+.cache/
+build/
+*.egg-info/
+__pycache__/
+.coverage
+.mypy_cache/
+.ruff_cache/
