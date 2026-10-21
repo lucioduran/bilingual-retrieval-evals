@@ -212,3 +212,20 @@ class AdapterTests(unittest.TestCase):
         for threads in (0, 5, True):
             with self.assertRaises(ValueError):
                 Encoder(Path("none"), threads)
+
+
+class ReplayToleranceTests(unittest.TestCase):
+    def test_numeric_roundoff_is_allowed_but_structure_remains_exact(self):
+        from bilingual_retrieval.experiment import equivalent
+
+        self.assertTrue(equivalent({"mean": 0.6875000000000001}, {"mean": 0.6875}))
+        self.assertFalse(equivalent({"mean": 0.6875}, {"mean": 0.6876}))
+        self.assertFalse(equivalent(0.0, float("nan")))
+        self.assertFalse(equivalent(1.0, float("inf")))
+        self.assertFalse(equivalent(1.0, True))
+        self.assertFalse(equivalent(1, True))
+        self.assertFalse(equivalent(["a", "b"], ["b", "a"]))
+        self.assertFalse(equivalent(["a"], ["a", "b"]))
+        self.assertFalse(equivalent(["a"], ("a",)))
+        self.assertFalse(equivalent({"a": 1}, {"a": 1, "b": 2}))
+        self.assertTrue(equivalent(None, None))

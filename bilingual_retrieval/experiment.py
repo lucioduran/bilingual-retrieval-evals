@@ -2,6 +2,7 @@
 
 import importlib.metadata
 import json
+import math
 import platform
 import subprocess
 import time
@@ -176,6 +177,26 @@ def run(dataset_path: Path, output: Path, cache: Path, split: str, k: int, threa
     write_json(output / "summary.json", result["breakdowns"])
 
 
+def equivalent(expected: Any, actual: Any) -> bool:
+    if isinstance(expected, float):
+        return (
+            type(actual) in (int, float)
+            and math.isfinite(actual)
+            and math.isclose(expected, actual, rel_tol=0, abs_tol=1e-12)
+        )
+    if type(expected) is not type(actual):
+        return False
+    if isinstance(expected, dict):
+        return expected.keys() == actual.keys() and all(
+            equivalent(value, actual[key]) for key, value in expected.items()
+        )
+    if isinstance(expected, list):
+        return len(expected) == len(actual) and all(
+            equivalent(left, right) for left, right in zip(expected, actual, strict=True)
+        )
+    return bool(expected == actual)
+
+
 def verify(dataset_path: Path, report_path: Path) -> None:
     report = fields(
         read_json(report_path),
@@ -198,5 +219,5 @@ def verify(dataset_path: Path, report_path: Path) -> None:
     expected = evaluate(
         dataset, report["split"], report["k"], vectors["documents"], vectors["queries"]
     )
-    if expected != report["evaluation"]:
+    if not equivalent(expected, report["evaluation"]):
         raise ValueError("rankings or metrics differ from evidence replay")
