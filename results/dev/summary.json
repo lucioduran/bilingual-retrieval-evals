@@ -1,0 +1,593 @@
+{
+  "bm25": {
+    "accent/none": {
+      "ndcg": {
+        "mean": 0.8,
+        "n": 10
+      },
+      "queries": 10,
+      "recall": {
+        "mean": 0.8,
+        "n": 10
+      },
+      "reciprocal_rank": {
+        "mean": 0.8,
+        "n": 10
+      }
+    },
+    "accent/omitted": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "queries": 6,
+      "recall": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 6
+      }
+    },
+    "accent/preserved": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "queries": 6,
+      "recall": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 6
+      }
+    },
+    "direction/en->en": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 4
+      },
+      "queries": 4,
+      "recall": {
+        "mean": 1.0,
+        "n": 4
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 4
+      }
+    },
+    "direction/en->es": {
+      "ndcg": {
+        "mean": 0.75,
+        "n": 4
+      },
+      "queries": 4,
+      "recall": {
+        "mean": 0.75,
+        "n": 4
+      },
+      "reciprocal_rank": {
+        "mean": 0.75,
+        "n": 4
+      }
+    },
+    "direction/es->en": {
+      "ndcg": {
+        "mean": 0.8571428571428571,
+        "n": 7
+      },
+      "queries": 7,
+      "recall": {
+        "mean": 0.8571428571428571,
+        "n": 7
+      },
+      "reciprocal_rank": {
+        "mean": 0.8571428571428571,
+        "n": 7
+      }
+    },
+    "direction/es->es": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "queries": 7,
+      "recall": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 7
+      }
+    },
+    "entity/absent": {
+      "ndcg": {
+        "mean": 0.5,
+        "n": 4
+      },
+      "queries": 4,
+      "recall": {
+        "mean": 0.5,
+        "n": 4
+      },
+      "reciprocal_rank": {
+        "mean": 0.5,
+        "n": 4
+      }
+    },
+    "entity/present": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 18
+      },
+      "queries": 18,
+      "recall": {
+        "mean": 1.0,
+        "n": 18
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 18
+      }
+    },
+    "kind/parallel": {
+      "ndcg": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      },
+      "queries": 22,
+      "recall": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      },
+      "reciprocal_rank": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      }
+    },
+    "language/en": {
+      "ndcg": {
+        "mean": 0.875,
+        "n": 8
+      },
+      "queries": 8,
+      "recall": {
+        "mean": 0.875,
+        "n": 8
+      },
+      "reciprocal_rank": {
+        "mean": 0.875,
+        "n": 8
+      }
+    },
+    "language/es": {
+      "ndcg": {
+        "mean": 0.9285714285714286,
+        "n": 14
+      },
+      "queries": 14,
+      "recall": {
+        "mean": 0.9285714285714286,
+        "n": 14
+      },
+      "reciprocal_rank": {
+        "mean": 0.9285714285714286,
+        "n": 14
+      }
+    },
+    "overall": {
+      "ndcg": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      },
+      "queries": 22,
+      "recall": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      },
+      "reciprocal_rank": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      }
+    }
+  },
+  "bm25-folded": {
+    "accent/none": {
+      "ndcg": {
+        "mean": 0.8,
+        "n": 10
+      },
+      "queries": 10,
+      "recall": {
+        "mean": 0.8,
+        "n": 10
+      },
+      "reciprocal_rank": {
+        "mean": 0.8,
+        "n": 10
+      }
+    },
+    "accent/omitted": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "queries": 6,
+      "recall": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 6
+      }
+    },
+    "accent/preserved": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "queries": 6,
+      "recall": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 6
+      }
+    },
+    "direction/en->en": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 4
+      },
+      "queries": 4,
+      "recall": {
+        "mean": 1.0,
+        "n": 4
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 4
+      }
+    },
+    "direction/en->es": {
+      "ndcg": {
+        "mean": 0.75,
+        "n": 4
+      },
+      "queries": 4,
+      "recall": {
+        "mean": 0.75,
+        "n": 4
+      },
+      "reciprocal_rank": {
+        "mean": 0.75,
+        "n": 4
+      }
+    },
+    "direction/es->en": {
+      "ndcg": {
+        "mean": 0.8571428571428571,
+        "n": 7
+      },
+      "queries": 7,
+      "recall": {
+        "mean": 0.8571428571428571,
+        "n": 7
+      },
+      "reciprocal_rank": {
+        "mean": 0.8571428571428571,
+        "n": 7
+      }
+    },
+    "direction/es->es": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "queries": 7,
+      "recall": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 7
+      }
+    },
+    "entity/absent": {
+      "ndcg": {
+        "mean": 0.5,
+        "n": 4
+      },
+      "queries": 4,
+      "recall": {
+        "mean": 0.5,
+        "n": 4
+      },
+      "reciprocal_rank": {
+        "mean": 0.5,
+        "n": 4
+      }
+    },
+    "entity/present": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 18
+      },
+      "queries": 18,
+      "recall": {
+        "mean": 1.0,
+        "n": 18
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 18
+      }
+    },
+    "kind/parallel": {
+      "ndcg": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      },
+      "queries": 22,
+      "recall": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      },
+      "reciprocal_rank": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      }
+    },
+    "language/en": {
+      "ndcg": {
+        "mean": 0.875,
+        "n": 8
+      },
+      "queries": 8,
+      "recall": {
+        "mean": 0.875,
+        "n": 8
+      },
+      "reciprocal_rank": {
+        "mean": 0.875,
+        "n": 8
+      }
+    },
+    "language/es": {
+      "ndcg": {
+        "mean": 0.9285714285714286,
+        "n": 14
+      },
+      "queries": 14,
+      "recall": {
+        "mean": 0.9285714285714286,
+        "n": 14
+      },
+      "reciprocal_rank": {
+        "mean": 0.9285714285714286,
+        "n": 14
+      }
+    },
+    "overall": {
+      "ndcg": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      },
+      "queries": 22,
+      "recall": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      },
+      "reciprocal_rank": {
+        "mean": 0.9090909090909091,
+        "n": 22
+      }
+    }
+  },
+  "dense": {
+    "accent/none": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 10
+      },
+      "queries": 10,
+      "recall": {
+        "mean": 1.0,
+        "n": 10
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 10
+      }
+    },
+    "accent/omitted": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "queries": 6,
+      "recall": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 6
+      }
+    },
+    "accent/preserved": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "queries": 6,
+      "recall": {
+        "mean": 1.0,
+        "n": 6
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 6
+      }
+    },
+    "direction/en->en": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 4
+      },
+      "queries": 4,
+      "recall": {
+        "mean": 1.0,
+        "n": 4
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 4
+      }
+    },
+    "direction/en->es": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 4
+      },
+      "queries": 4,
+      "recall": {
+        "mean": 1.0,
+        "n": 4
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 4
+      }
+    },
+    "direction/es->en": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "queries": 7,
+      "recall": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 7
+      }
+    },
+    "direction/es->es": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "queries": 7,
+      "recall": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 7
+      }
+    },
+    "entity/absent": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 4
+      },
+      "queries": 4,
+      "recall": {
+        "mean": 1.0,
+        "n": 4
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 4
+      }
+    },
+    "entity/present": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 18
+      },
+      "queries": 18,
+      "recall": {
+        "mean": 1.0,
+        "n": 18
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 18
+      }
+    },
+    "kind/parallel": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 22
+      },
+      "queries": 22,
+      "recall": {
+        "mean": 1.0,
+        "n": 22
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 22
+      }
+    },
+    "language/en": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 8
+      },
+      "queries": 8,
+      "recall": {
+        "mean": 1.0,
+        "n": 8
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 8
+      }
+    },
+    "language/es": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 14
+      },
+      "queries": 14,
+      "recall": {
+        "mean": 1.0,
+        "n": 14
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 14
+      }
+    },
+    "overall": {
+      "ndcg": {
+        "mean": 1.0,
+        "n": 22
+      },
+      "queries": 22,
+      "recall": {
+        "mean": 1.0,
+        "n": 22
+      },
+      "reciprocal_rank": {
+        "mean": 1.0,
+        "n": 22
+      }
+    }
+  }
+}
