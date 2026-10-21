@@ -9,8 +9,9 @@ from collections import Counter
 def tokens(text: str, fold_accents: bool = False) -> list[str]:
     text = unicodedata.normalize("NFC", text).casefold()
     if fold_accents:
-        text = "".join(c for c in unicodedata.normalize("NFD", text)
-                       if not unicodedata.combining(c))
+        text = "".join(
+            c for c in unicodedata.normalize("NFD", text) if not unicodedata.combining(c)
+        )
     return re.findall(r"[^\W_]+", text, re.UNICODE)
 
 

@@ -82,14 +82,24 @@ def parse_dataset(raw: Any) -> Dataset:
     docs = []
     for raw_doc in array(root["documents"], "documents"):
         doc = fields(raw_doc, "id language text source", "document")
-        docs.append(Document(string(doc["id"], "id"), choice(doc["language"], "en es", "language"),
-                             string(doc["text"], "text"), string(doc["source"], "source")))
+        docs.append(
+            Document(
+                string(doc["id"], "id"),
+                choice(doc["language"], "en es", "language"),
+                string(doc["text"], "text"),
+                string(doc["source"], "source"),
+            )
+        )
     unique([doc.id for doc in docs], "documents")
     by_id = {doc.id: doc for doc in docs}
     queries = []
     families: dict[str, str] = {}
     for raw_query in array(root["queries"], "queries"):
-        q = fields(raw_query, "id family split language target_language text kind entity accent judgments", "query")
+        q = fields(
+            raw_query,
+            "id family split language target_language text kind entity accent judgments",
+            "query",
+        )
         family = string(q["family"], "family")
         split = choice(q["split"], "dev eval", "split")
         if family in families and families[family] != split:
@@ -98,7 +108,9 @@ def parse_dataset(raw: Any) -> Dataset:
         target = choice(q["target_language"], "en es", "target_language")
         judgments = []
         for raw_judgment in array(q["judgments"], "judgments"):
-            j = fields(raw_judgment, "document_id grade evidence rationale assessor review", "judgment")
+            j = fields(
+                raw_judgment, "document_id grade evidence rationale assessor review", "judgment"
+            )
             did = string(j["document_id"], "document_id")
             if did not in by_id or by_id[did].language != target:
                 raise ValueError("judgment references an unknown or wrong-language document")
@@ -110,18 +122,33 @@ def parse_dataset(raw: Any) -> Dataset:
                 raise ValueError("positive judgments require evidence")
             if evidence and evidence not in by_id[did].text:
                 raise ValueError("evidence must be an exact document substring")
-            judgments.append(Judgment(did, grade, evidence, string(j["rationale"], "rationale"),
-                                      string(j["assessor"], "assessor"),
-                                      choice(j["review"], "authored pending reviewed", "review")))
+            judgments.append(
+                Judgment(
+                    did,
+                    grade,
+                    evidence,
+                    string(j["rationale"], "rationale"),
+                    string(j["assessor"], "assessor"),
+                    choice(j["review"], "authored pending reviewed", "review"),
+                )
+            )
         unique([j.document_id for j in judgments], "judgments")
         if {j.document_id for j in judgments} != {doc.id for doc in docs if doc.language == target}:
             raise ValueError("every candidate document must have an explicit judgment")
-        queries.append(Query(string(q["id"], "id"), family, split,
-                             choice(q["language"], "en es", "language"), target,
-                             string(q["text"], "text"),
-                             choice(q["kind"], "parallel cultural control", "kind"),
-                             choice(q["entity"], "present absent", "entity"),
-                             choice(q["accent"], "preserved omitted none", "accent"), tuple(judgments)))
+        queries.append(
+            Query(
+                string(q["id"], "id"),
+                family,
+                split,
+                choice(q["language"], "en es", "language"),
+                target,
+                string(q["text"], "text"),
+                choice(q["kind"], "parallel cultural control", "kind"),
+                choice(q["entity"], "present absent", "entity"),
+                choice(q["accent"], "preserved omitted none", "accent"),
+                tuple(judgments),
+            )
+        )
     unique([q.id for q in queries], "queries")
     return Dataset(string(root["name"], "name"), tuple(docs), tuple(queries))
 
